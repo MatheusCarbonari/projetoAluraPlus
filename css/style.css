@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*VARIABLES*/
+:root{
+    --white-first: #ffffff;
+    --gray-second: #c0c0c0;
+    --button-blue: #167bf7;
+    --background-color: #00030c;
+    --font-inter: 'Inter', sans-serif;
+}
+
+/*DEFAULT*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--white-first);
+}
+
+/*MAIN*/
+
+/*FIRST SECTION*/
+
+.main{
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#content-container{
+    width: 36.75rem;
+    height: 26.94rem;
+    margin-top: 9%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#content-container h1{
+    font-size: 1.75rem;
+    line-height: 2.12rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: var(--font-inter);
+}
+
+#button-plus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#button-plus a{
+    width: 32rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #167bf7;
+    text-decoration: none;
+    color: var(--white-first);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-inter);
+}
+
+#button-plus a:hover{ 
+    background-color: transparent;
+    border: 1px solid var(--gray-second);    
+}
+
+#button-plus p{ 
+    color: var(--gray-second);
+    font-size: 12px;  
+}
+
+/*SECOND SECTION*/
+
+.second-container{
+    height: 90vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin: 0 10em;
+}
+
+.second-image{
+    width: 80%;
+}
+
+.second-title{
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.text{
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--gray-second);
+}
+
+/*THIRD SECTION*/
+
+.third{
+    margin: 0 6em;
+}
+
+.third img{
+    margin: auto;
+}
+
+.third p{
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+}
+
+.third-button{
+    width: 10.17rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #167bf7;
+    text-decoration: none;
+    color: var(--white-first);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-inter);
+}
+
+.third-button:hover{
+    background-color: transparent;
+    border: 1px solid var(--gray-second);
+}
+
+/*FOURTH SECTION*/
+
+.fourth img{
+    margin: auto;
+    width: 30rem;
+    height: 19rem;
+}
+
+.fourth div{
+    padding-left: 2.75rem;
+}
+
+/*FIFTH SECTION*/
+
+.devices{
+    margin: 0 6em;
+    text-align: center;
+}
+
+.devices-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 7%;
+}
+
+.devices-title{
+    font-family: var(--font-inter);
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 8% 0 5% 0;
+}
+
+.list-item{
+    font-family: var(--font-inter);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/*FOOTER*/
+
+.footer-container{
+    display: grid;
+    grid-template-rows: 25%;
+    text-align: center;
+    margin: 10em 5em 6em 5em;
+}
+
+.footer-container img{
+    margin: auto;
+}
+
+.footer-list{
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 2% 0;
+}
+
+.footer-list-item{
+    padding: 0.9%;
+}
+
+.footer-list-item a{
+    text-decoration: none;
+    color: var(--white-first);
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.footer-list-item a:hover{
+    color: var(--button-blue);
+}
+
+.footer-container p{
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 0.88rem;
+    line-height: 1.31rem;
+    padding-bottom: 2%;
+}
